@@ -1,0 +1,33 @@
+{
+  "name": "redditclone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify js/app.jsx -o build/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConlanMcNamee/react_reddit.git"
+  },
+  "keywords": [
+    "React.js"
+  ],
+  "author": "Conlan McNamee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConlanMcNamee/react_reddit/issues"
+  },
+  "homepage": "https://github.com/ConlanMcNamee/react_reddit#readme",
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
